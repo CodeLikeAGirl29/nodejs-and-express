@@ -1,3 +1,57 @@
+h1 {
+    color: #6e84b7;
+}
+
+#my-info {
+    background: #6e84b7;
+}
+
+#my-info .thumbnail {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#my-info h5 {
+    font-weight: bold;
+    text-shadow: 2px 2px #0a0a0a;
+}
+
+#my-info .text-light {
+    color: lightgray;
+}
+
+#my-info a {
+    color: white;
+}
+
+.portfolio-index .thumbnail {
+    border: solid 4px lightgray;
+    border-radius: 5px;
+    transition: transform 0.2s ease-out;
+}
+
+.portfolio-index .thumbnail:hover {
+    transform: scale(1.2);
+}
+
+.portfolio-meta>ul>li {
+    font-weight: bold;
+    color: darkgray;
+}
+
+.button {
+    background: #6e84b7;
+    font-weight: bold;
+    transition: transform 0.2s ease-out;
+}
+
+.button:hover {
+    background: lightblue;
+    transform: scale(1.1);
+}
+
+
 /*
   Main styles
 */
@@ -16,15 +70,9 @@ body {
 }
 
 body {
-    position: relative;
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    font-weight: normal;
-    line-height: 1.5;
-    color: #0a0a0a;
-    background: #f7f9f8;
-    background: #f7f9f8;
-    transform: translateX(0px);
-    transition: all 0.4s ease-out;
+    background-color: #f7f9f8;
+    color: #02072f;
 }
 
 article {
@@ -112,7 +160,7 @@ a {
 */
 
 nav {
-    width: 100%;
+    margin: 0;
     padding: 20px;
     border-bottom: 1px solid #eaeaea;
 }
@@ -148,6 +196,10 @@ a:hover {
     min-height: 100%;
     padding: 20px;
     background: #4285f4;
+    overflow: auto;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .sidebar-info-box {
@@ -188,51 +240,6 @@ a:hover {
     letter-spacing: 2.5px;
     text-transform: uppercase;
     color: #f0ebf4;
-}
-
-
-/*
-button styling 
-*/
-
-button {
-    border-radius: 4px;
-    background-color: #5ca1e1;
-    border: none;
-    color: #fff;
-    text-align: center;
-    font-size: 32px;
-    padding: 16px;
-    width: 220px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 36px;
-    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-}
-
-button {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-button:after {
-    content: "»";
-    position: absolute;
-    opacity: 0;
-    top: 14px;
-    right: -20px;
-    transition: 0.5s;
-}
-
-button:hover {
-    padding-right: 24px;
-    padding-left: 8px;
-}
-
-button:hover:after {
-    opacity: 1;
 }
 
 .header {
