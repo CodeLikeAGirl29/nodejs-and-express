@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+html(lang="en" dir="ltr")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible' content='ie=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title My Portfolio Site
+    link(href='https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Hurricane&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='/static/css/normalize.css')
+    link(rel='stylesheet' href='/static/css/styles.css')
+
+  body
+    #my-info.sidebar
+      .sidebar-info-box
+        br
+        .thumbnail-box
+          img.thumbnail(src='https://res.cloudinary.com/codelikeagirl29/image/upload/v1647244082/profile-img_yuhdxb.jpg' alt='lindseys profile image')
+        .dev-intro-box
+
+          //- Replace with your name
+          h5 Lindsey Howard
+
+          //- Replace with description of who you are, what you do, and why you are so awesome
+          p 🗲 Advanced software made simple.
+
+          //- Add path from your '/about' route handler to the href below
+          a(href='about') Learn More &rarr;
+
+    .off-canvas-content(data-off-canvas-content='')
+      .title-bar.hide-for-large
+        .title-bar-left
+          button.menu-icon(type='button' data-toggle='my-info')
+
+
+          span.title-bar-title Lindsey
+      block content
+
+
+
+  script(src='/static/js/vendor/jquery.js')
+  script(src='/static/js/vendor/foundation.js')
+  script(src='/static/js/vendor/jquery.smoothState.js')
+  script(src='/static/js/script.js')

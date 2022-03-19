@@ -1,0 +1,29 @@
+{
+    "name": "static_node_and_express_site-v1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "npx nodemon app.js",
+        "dev": "nodemon ./app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/codelikeagirl29/nodejs-and-express.git"
+    },
+    "keywords": [],
+    "author": "Lindsey Howard <codelikeagirl91@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/codelikeagirl29/nodejs-and-express/issues"
+    },
+    "homepage": "https://github.com/codelikeagirl29/nodejs-and-express#readme",
+    "dependencies": {
+        "express": "^4.17.3",
+        "pug": "^3.0.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}
