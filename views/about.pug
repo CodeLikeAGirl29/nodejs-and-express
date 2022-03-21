@@ -1,61 +1,39 @@
 extends layout.pug
 
-block content
+block content 
+  article.grid-container.portfolio-intro.portfolio-project
+    .grid-x
+      .cell.small-6.medium-9.large-9
 
-  nav.nav
-    a(href='/')
-      span &larr;
-      |  Back
+        h1.text-light.font-righteous Lindsey
+        p.lead.text-light.font-righteous
+          | Full Stack Web Developer
 
-  article.portfolio-about
-    .inner-wrapper.flex-row-wrap.two-col
-      .about-intro-box.box
-
-        //- Replace with your name
-        h1 Lindsey
-
-        //- Feel free to personalize the title below
-        p Full Stack Web Developer
-
-
-        .about-bio
-
-          //- Replace the boilerplate below with your best elevator pitch
-          p | Based in Raleigh, NC | Introvert | Canine Lover
+        .portfolio-bio
+          p.text-light
+            | Based in Raleigh, NC | Introvert | Canine Lover
             br
             br
             | Non-fiction book reading, mountain climbing, avid researching girl born in the country.
+      .cell.portfolio-meta.small-6.medium-2.large-3
+        h6.text-light.font-righteous Skills
 
-
-      .skills-contact-box.box
-        h6 Skills
-
-        //- Replace skills below with your own skills — at this point, you should be able to list as many as ten skills
         ul
-          li React.js
-          li HTML/CSS
-          li JavaScript
-          li Git and GitHub
-          li React Native
-          li Expo
-          li OOP
-          li Fetch and Public APIs
-          li Node.js
           li Express
+          li JavaScript
+          li Node
+          li React
+          li & React Native 
+          li MongoDB
+          li PostgreSQL
+        h6.text-light.font-righteous Contact Info
 
-        h6 Contact Info
-
-        //- Replace with your own contact info - feel free to use fake information if you prefer
         ul
           li 919.417.9901
           li codelikeagirl91@gmail.com
 
-        //- Add URLs to the hrefs below to link to your social media accounts - feel free to use non-personal links to social media home pages if you prefer
-        a.btn-link(href='https://www.linkedin.com/in/lindsey-howard/') LinkedIn
-        a.btn-link(href='https://www.github.com/codelikeagirl29/') GitHub
-        a.btn-link(href='https://www.twitter.com/dev_lindseyk') Twitter
-
-    nav.nav
-      a(href='/')
-        span &larr;
-        |  Back
+        a.button.expanded(href='https://www.lindseyk.dev') Website
+        a.button.expanded(href='https://www.linkedin.com/in/lindsey-howard/') LinkedIn
+        a.button.expanded(href='https://github.com/codelikeagirl29') GitHub
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/') ← Back

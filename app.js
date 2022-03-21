@@ -5,53 +5,44 @@ Project 6: Static Node.js and Express Site
 **************************************/
 
 const express = require("express");
-const data = require("./data.json").projects;
 const path = require("path");
 const app = express();
+const bodyParser = require("body-parser");
+const projectRoutes = require("./routes/projects");
+
+// Looks if port exists, or use port 3300
 const port = process.env.PORT || 3300;
-
-app.set("view engine", "pug"); //use pug
-app.set("views", path.join(__dirname, "views")); //hook the pug up with express
-
 app.use("/static", express.static("public"));
-app.use("/static", express.static(path.join(__dirname, "public"))); //use express static to serve up static file in public
-app.use("/images", express.static(path.join(__dirname, "images"))); //serve up images as static files
 
-app.get("/", (req, res) => {
-	//render index page and pass data to pug template
-	res.render("index", {
-		data,
-	});
-});
+app.use("/static", express.static(path.join(__dirname, "public")));
 
-app.get("/about", (req, res) => {
-	res.render("about"); // renders the about page
-});
+// using pug
+app.set("view engine", "pug");
 
-app.get("/project/:id", (req, res, next) => {
-	// renders the project page
-	res.render("project", {
-		data,
-		data: data[req.params.id],
-	});
-});
+// defining routes
+const routes = require("./routes/index");
 
-/* ERROR HANDLERS */
+app.use(routes);
+app.use(projectRoutes);
 
-/* 404 handler to catch undefined or non-existent route requests */
-app.use((req, res, next) => {
-	const err = new Error("Not found");
-	err.status = 404; // handles the 404 errors
+// page npt found error
+app.use(function (req, res, next) {
+	const err = new Error("Page is Not Found");
+	err.status = 404;
+	console.error(
+		`An error occured on route ${req.originalUrl} with message: ${err.message} and status: ${err.status}`
+	);
 	next(err);
 });
 
+// more error handling
 app.use((err, req, res, next) => {
-	const status = err.status || 500; // the default error handler
-	res.status(status);
-	res.render("error", { error: err }); // render error in error template
+	res.locals.error = err;
+	res.status(err.status || 500);
+	res.render("error");
 });
 
-// Setting up the Server
+// start the server
 app.listen(port, () => {
-	console.log(`Server is now running on ${port}.`);
+	console.log(`The application is running on localhost:${port}`);
 });

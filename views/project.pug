@@ -1,45 +1,24 @@
 extends layout.pug
 
-block content
+block content 
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/') ← Back
+  article.grid-container.portfolio-intro.portfolio-project
+    .grid-x
+      .cell.small-6.medium-9.large-9
 
-  nav.nav
-    a(href='/')
-      span &larr;
-      |  Back
+        h1= project_name
 
-  article.portfolio-projects
-    .inner-wrapper.flex-row-wrap.two-col
-      .project-info-box.box
+        p.lead.text-light= description
 
-        //- Use the info in your data file and the comments below to complete this template
-
-        //- Use interpolation to dynamically add the project title
-        h1 project.project_name
-
-        //- Use interpolation to dynamically add the project description
-        p project.description
-
-      .project-tech-links-box.box
+      .cell.portfolio-meta.small-6.medium-2.large-3
         h6 Technologies
+
         ul
+          each technology in technologies
+            li= technology
 
-          //- Use an `each` iterator and interpolation to dynamically replace the li tags below with the technologies listed for this project
-        if project.technologies
-          ul
-            each technology in project.technologies
-              li= technology
+        a.button.expanded.project-button(href=live_link, target="_blank") Live Demo
+        a.button.expanded.project-button(href=github_link, target="_blank") GitHub Repo
 
-        //- Add the href values to the links below
-        a.btn-link(href=`${project.live_link}`, target="_blank") Live Demo
-        a.btn-link(href=`${project.github_link}`, target="_blank") GitHub Repo
-
-    .project-img-box.box
-
-      img.image(src=`${project.image_urls}`)
-      img.image(src=`${project.image_urls}`)
-      img.image(src=`${project.image_urls}`)
-
-    nav.nav
-      a(href='/')
-        span &larr;
-        |  Back
+    img.image(src=image_urls[0])
