@@ -1,10 +1,11 @@
 # My Node & Express Project
 
-![](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+Built with...
+- ![](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+- ![](https://img.shields.io/badge/Pug-E3C29B?style=for-the-badge&logo=pug&logoColor=black)
+- ![](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 
-![](https://img.shields.io/badge/Pug-E3C29B?style=for-the-badge&logo=pug&logoColor=black)
-
-![](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+---
 
 In this project, you'll create a gorgeous portfolio site to showcase the great projects you've built. The site will contain a modern landing page, an about page where you'll have a chance to share contact info, practice your elevator pitch and talk a little about yourself, and a series of project pages to show off and detail at least your first five projects from this Techdegree.
 
@@ -20,3 +21,7 @@ You'll use Node.js and Express to:
 - Set up the middleware to utilize static files like CSS
 - Handle errors
 - Set up a server to serve the project
+
+
+![express-node-screenshot](https://user-images.githubusercontent.com/25946305/169816795-7c0d4b96-cab6-4390-84a1-fa1f141fe168.png)
+<figcaption>A screenshot of my Nodejs and Express Projects page. </figcaption>
