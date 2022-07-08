@@ -15,7 +15,7 @@
             "technologies": ["HTML/CSS", "React", "JavaScript"],
             "live_link": "https://city-tours-seven.vercel.app/",
             "github_link": "https://github.com/codelikeagirl29/city-tours",
-            "image_urls": ["https://res.cloudinary.com/codelikeagirl29/image/upload/v1645750581/ScreenShot_Tool_-20220224195543_fkjmjr.png"]
+            "image_urls": ["https://res.cloudinary.com/codelikeagirl29/image/upload/v1645750581/cityTours-screenshot.png"]
         },
         {
             "id": "2",
@@ -52,6 +52,15 @@
             "live_link": "https://github.com/codelikeagirl29/milkshakesExpress/",
             "github_link": "https://github.com/codelikeagirl29/milkshakesExpress/",
             "image_urls": ["https://res.cloudinary.com/codelikeagirl29/image/upload/v1645749312/milkshakesExpress_khya9j.png"]
-        }
+        },
+             {
+            "id": "6",
+            "project_name": "Unsplash API",
+            "description": "An app allowing users to sign in to view milkshake recipes.",
+            "technologies": ["React", "API", "React Hooks"],
+            "live_link": "https://xhffdr.csb.app/",
+            "github_link": "https://github.com/codelikeagirl29/unsplash-api/",
+            "image_urls": ["https://res.cloudinary.com/codelikeagirl29/image/upload/v1657282473/unsplash-api_nks2d6.png"]
+        },
     ]
 }
