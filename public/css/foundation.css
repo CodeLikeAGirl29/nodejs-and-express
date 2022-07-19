@@ -3711,7 +3711,7 @@ screen and (min-width: 64em) {
 .button {
     display: inline-block;
     vertical-align: middle;
-    margin: 0 0 1rem 0;
+    margin: 0 0 1rem;
     font-family: inherit;
     padding: 0.85em 1em;
     -webkit-appearance: none;
@@ -4453,11 +4453,11 @@ label.middle {
 }
 
 .input-group> :first-child {
-    border-radius: 0 0 0 0;
+    border-radius: 0;
 }
 
 .input-group> :last-child>* {
-    border-radius: 0 0 0 0;
+    border-radius: 0;
 }
 
 .input-group-label,
@@ -4649,11 +4649,11 @@ select[multiple] {
 }
 
 .accordion-item:first-child> :first-child {
-    border-radius: 0 0 0 0;
+    border-radius: 0;
 }
 
 .accordion-item:last-child> :last-child {
-    border-radius: 0 0 0 0;
+    border-radius: 0;
 }
 
 .accordion-title {
@@ -4669,7 +4669,7 @@ select[multiple] {
 
 :last-child:not(.is-active)>.accordion-title {
     border-bottom: 1px solid #e6e6e6;
-    border-radius: 0 0 0 0;
+    border-radius: 0;
 }
 
 .accordion-title:hover,
@@ -4848,7 +4848,7 @@ select[multiple] {
 }
 
 .breadcrumbs {
-    margin: 0 0 1rem 0;
+    margin: 0 0 1rem;
     list-style: none;
 }
 
@@ -5101,7 +5101,7 @@ screen and (min-width: 64em) {
 
 .callout {
     position: relative;
-    margin: 0 0 1rem 0;
+    margin: 0 0 1rem;
     padding: 1rem;
     border: 1px solid rgba(10, 10, 10, 0.25);
     border-radius: 0;
