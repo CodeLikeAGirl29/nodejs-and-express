@@ -1,66 +1,81 @@
 {
-    "projects": [{
-            "id": "0",
-            "project_name": "Toyota App",
-            "description": "A promotional app for all of Toyotas best models.",
-            "technologies": ["React Native", "Expo"],
-            "live_link": "https://snack.expo.dev/@codelikeagirl91/toyota-app",
-            "github_link": "https://github.com/CodeLikeAGirl29/toyota-app",
-            "image_urls": ["https://res.cloudinary.com/codelikeagirl29/image/upload/v1645749312/TOYOTA-APP_nqrefu.png"]
-        },
-        {
-            "id": "1",
-            "project_name": "City Tours",
-            "description": "A site for viewing hot tourist attractions around the united states",
-            "technologies": ["HTML/CSS", "React", "JavaScript"],
-            "live_link": "https://city-tours-seven.vercel.app/",
-            "github_link": "https://github.com/codelikeagirl29/city-tours",
-            "image_urls": ["https://res.cloudinary.com/codelikeagirl29/image/upload/v1645750581/cityTours-screenshot.png"]
-        },
-        {
-            "id": "2",
-            "project_name": "Adventure Planner",
-            "description": "Adventure planner app for viewing the weather for hiking and climbing specific trails. Using Google Maps, OpenWeather, and HikingProject.",
-            "technologies": ["HTML/CSS", "API", "JavaScript"],
-            "live_link": "https://codelikeagirl29.github.io/adventure-planner/",
-            "github_link": "https://github.com/codelikeagirl29/adventure-planner/",
-            "image_urls": ["https://res.cloudinary.com/codelikeagirl29/image/upload/v1645749312/ADVENTURE_s0qxhs.png"]
-        },
-        {
-            "id": "3",
-            "project_name": "Hangman Game",
-            "description": "A phrase guessing games",
-            "technologies": ["HTML", "CSS", "JavaScript, jQuery"],
-            "live_link": "https://codelikeagirl29.github.io/oop-game-show-app/",
-            "github_link": "https://github.com/codelikeagirl29/oop-game-show-app/",
-            "image_urls": ["https://res.cloudinary.com/codelikeagirl29/image/upload/v1645749662/ScreenShot_Tool_-20220224194045_so2c4u.png"]
-        },
-        {
-            "id": "4",
-            "project_name": "Students",
-            "description": "An employee directory generated from a public API",
-            "technologies": ["HTML", "CSS", "JavaScript", "jQuery"],
-            "live_link": "https://students-pagination-list.netlify.app/",
-            "github_link": "https://github.com/codelikeagirl29/students-pagination",
-            "image_urls": ["https://res.cloudinary.com/codelikeagirl29/image/upload/v1645749312/students-pagination_gbwcmc.png"]
-        },
-        {
-            "id": "5",
-            "project_name": "milkshakesExpress",
-            "description": "An app allowing users to sign in to view milkshake recipes.",
-            "technologies": ["Express", "Node.js", "JWT", "MongoDB"],
-            "live_link": "https://github.com/codelikeagirl29/milkshakesExpress/",
-            "github_link": "https://github.com/codelikeagirl29/milkshakesExpress/",
-            "image_urls": ["https://res.cloudinary.com/codelikeagirl29/image/upload/v1645749312/milkshakesExpress_khya9j.png"]
-        },
-             {
-            "id": "6",
-            "project_name": "Unsplash API",
-            "description": "An app allowing users to sign in to view milkshake recipes.",
-            "technologies": ["React", "API", "React Hooks"],
-            "live_link": "https://xhffdr.csb.app/",
-            "github_link": "https://github.com/codelikeagirl29/unsplash-api/",
-            "image_urls": ["https://res.cloudinary.com/codelikeagirl29/image/upload/v1657282473/unsplash-api_nks2d6.png"]
-        },
-    ]
+	"projects": [
+		{
+			"id": "0",
+			"project_name": "Image Search",
+			"description": "An image search tool that implements the Unsplash API into a React app.",
+			"technologies": ["React", "Unsplash"],
+			"live_link": "https://xhffdr.csb.app/",
+			"github_link": "https://github.com/CodeLikeAGirl29/unsplash-api",
+			"image_urls": [
+				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1657282473/unsplash-api_nks2d6.png"
+			]
+		},
+		{
+			"id": "1",
+			"project_name": "City Tours",
+			"description": "A site for viewing hot tourist attractions around the united states",
+			"technologies": ["HTML/CSS", "React", "JavaScript"],
+			"live_link": "https://city-tours-seven.vercel.app/",
+			"github_link": "https://github.com/codelikeagirl29/city-tours",
+			"image_urls": [
+				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1645750581/cityTours-screenshot.png"
+			]
+		},
+		{
+			"id": "2",
+			"project_name": "Adventure Planner",
+			"description": "Adventure planner app for viewing the weather for hiking and climbing specific trails. Using Google Maps, OpenWeather, and HikingProject.",
+			"technologies": ["HTML/CSS", "API", "JavaScript"],
+			"live_link": "https://codelikeagirl29.github.io/adventure-planner/",
+			"github_link": "https://github.com/codelikeagirl29/adventure-planner/",
+			"image_urls": [
+				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1645749312/ADVENTURE_s0qxhs.png"
+			]
+		},
+		{
+			"id": "3",
+			"project_name": "Hangman Game",
+			"description": "A phrase guessing games",
+			"technologies": ["HTML", "CSS", "JavaScript, jQuery"],
+			"live_link": "https://codelikeagirl29.github.io/oop-game-show-app/",
+			"github_link": "https://github.com/codelikeagirl29/oop-game-show-app/",
+			"image_urls": [
+				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1645749662/ScreenShot_Tool_-20220224194045_so2c4u.png"
+			]
+		},
+		{
+			"id": "4",
+			"project_name": "Students",
+			"description": "An employee directory generated from a public API",
+			"technologies": ["HTML", "CSS", "JavaScript", "jQuery"],
+			"live_link": "https://students-pagination-list.netlify.app/",
+			"github_link": "https://github.com/codelikeagirl29/students-pagination",
+			"image_urls": [
+				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1645749312/students-pagination_gbwcmc.png"
+			]
+		},
+		{
+			"id": "5",
+			"project_name": "milkshakesExpress",
+			"description": "An app allowing users to sign in to view milkshake recipes.",
+			"technologies": ["Express", "Node.js", "JWT", "MongoDB"],
+			"live_link": "https://github.com/codelikeagirl29/milkshakesExpress/",
+			"github_link": "https://github.com/codelikeagirl29/milkshakesExpress/",
+			"image_urls": [
+				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1645749312/milkshakesExpress_khya9j.png"
+			]
+		},
+		{
+			"id": "6",
+			"project_name": "Unsplash API",
+			"description": "An app allowing users to sign in to view milkshake recipes.",
+			"technologies": ["React", "API", "React Hooks"],
+			"live_link": "https://xhffdr.csb.app/",
+			"github_link": "https://github.com/codelikeagirl29/unsplash-api/",
+			"image_urls": [
+				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1657282473/unsplash-api_nks2d6.png"
+			]
+		}
+	]
 }
