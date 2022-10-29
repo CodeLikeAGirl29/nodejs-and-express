@@ -8,7 +8,7 @@
 			"live_link": "https://xhffdr.csb.app/",
 			"github_link": "https://github.com/CodeLikeAGirl29/unsplash-api",
 			"image_urls": [
-				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1657282473/unsplash-api_nks2d6.png"
+				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1665323141/projects/Photo-App_ouq2vz.png"
 			]
 		},
 		{
@@ -19,18 +19,18 @@
 			"live_link": "https://city-tours-seven.vercel.app/",
 			"github_link": "https://github.com/codelikeagirl29/city-tours",
 			"image_urls": [
-				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1645750581/cityTours-screenshot.png"
+				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1645750581/projects/cityTours-screenshot.png"
 			]
 		},
 		{
 			"id": "2",
-			"project_name": "Adventure Planner",
-			"description": "Adventure planner app for viewing the weather for hiking and climbing specific trails. Using Google Maps, OpenWeather, and HikingProject.",
-			"technologies": ["HTML/CSS", "API", "JavaScript"],
-			"live_link": "https://codelikeagirl29.github.io/adventure-planner/",
-			"github_link": "https://github.com/codelikeagirl29/adventure-planner/",
+			"project_name": "BMW Blog",
+			"description": "An informative blog site using German's favorite luxury car!",
+			"technologies": ["Research", "HTML/CSS", "JavaScript"],
+			"live_link": "https://codelikeagirl29.github.io/my-blog/",
+			"github_link": "https://github.com/codelikeagirl29/my-blog/",
 			"image_urls": [
-				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1645749312/ADVENTURE_s0qxhs.png"
+				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1647244306/projects/ScreenShot_Tool_-20220314035130_bq0ywc.png"
 			]
 		},
 		{
@@ -41,7 +41,7 @@
 			"live_link": "https://codelikeagirl29.github.io/oop-game-show-app/",
 			"github_link": "https://github.com/codelikeagirl29/oop-game-show-app/",
 			"image_urls": [
-				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1645749662/ScreenShot_Tool_-20220224194045_so2c4u.png"
+				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1645749662/projects/ScreenShot_Tool_-20220224194045_so2c4u.png"
 			]
 		},
 		{
@@ -52,7 +52,7 @@
 			"live_link": "https://students-pagination-list.netlify.app/",
 			"github_link": "https://github.com/codelikeagirl29/students-pagination",
 			"image_urls": [
-				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1645749312/students-pagination_gbwcmc.png"
+				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1645749312/projects/students-pagination_gbwcmc.png"
 			]
 		},
 		{
@@ -63,18 +63,18 @@
 			"live_link": "https://github.com/codelikeagirl29/milkshakesExpress/",
 			"github_link": "https://github.com/codelikeagirl29/milkshakesExpress/",
 			"image_urls": [
-				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1645749312/milkshakesExpress_khya9j.png"
+				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1645749312/projects/milkshakesExpress_khya9j.png"
 			]
 		},
 		{
 			"id": "6",
-			"project_name": "Unsplash API",
+			"project_name": "Jobspace",
 			"description": "An app allowing users to sign in to view milkshake recipes.",
-			"technologies": ["React", "API", "React Hooks"],
-			"live_link": "https://xhffdr.csb.app/",
-			"github_link": "https://github.com/codelikeagirl29/unsplash-api/",
+			"technologies": ["React", "MongoDB", "Node & Express"],
+			"live_link": "https://my-jobspace.herokuapp.com/",
+			"github_link": "https://github.com/codelikeagirl29/my-jobspace/",
 			"image_urls": [
-				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1657282473/unsplash-api_nks2d6.png"
+				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1662720108/projects/Jobscape_nrvzkg.png"
 			]
 		}
 	]
