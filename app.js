@@ -1,7 +1,7 @@
 /**************************************
 Lindsey Howard
 Team Treehouse: JavaScript Full Stack Techdegree
-Project 6: Static Node.js and Express Site 
+Project 6: Static Node.js and Express Site
 **************************************/
 
 const express = require("express");
@@ -13,8 +13,6 @@ const projectRoutes = require("./routes/projects");
 // Looks if port exists, or use port 3300
 const port = process.env.PORT || 3300;
 app.use("/static", express.static("public"));
-
-app.use("/static", express.static(path.join(__dirname, "public")));
 
 // using pug
 app.set("view engine", "pug");
@@ -39,10 +37,12 @@ app.use(function (req, res, next) {
 app.use((err, req, res, next) => {
 	res.locals.error = err;
 	res.status(err.status || 500);
-	res.render("error");
+	res.render("error", {
+		stack: err.stack
+	});
 });
 
 // start the server
 app.listen(port, () => {
-	console.log(`The application is running on localhost:${port}`);
+	console.log(`The server is running on localhost:${port}`);
 });

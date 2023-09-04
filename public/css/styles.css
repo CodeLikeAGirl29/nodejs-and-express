@@ -1,239 +1,237 @@
 @import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 body {
-    background-color: #e5e5e5;
-    color: #02072f;
+	background-color: #e5e5e5;
+	color: #02072f;
 }
 
 #my-info {
-    color: #e5e5e5;
-    font-family: "Maven Pro", sans-serif;
-    font-size: 1rem;
+	color: #e5e5e5;
+	font-family: "Maven Pro", sans-serif;
+	font-size: 1rem;
 }
 
 h2,
 h3 {
-    color: #ea3057;
-    font-family: "Maven Pro", sans-serif;
-    line-height: 1.2;
+	color: #ea3057;
+	font-family: "Maven Pro", sans-serif;
+	line-height: 1.2;
 }
 
 h4,
 h5 {
-    color: #f0ebf4;
-    font-family: "Bebas Neue", cursive;
-    letter-spacing: 2.5px;
-    font-size: 1.3rem;
-    line-height: 1.2;
+	color: #f0ebf4;
+	font-family: "Bebas Neue", cursive;
+	letter-spacing: 2.5px;
+	font-size: 1.3rem;
+	line-height: 1.2;
 }
 
 h6 {
-    letter-spacing: 2.5px;
-    -webkit-text-transform: uppercase;
-    text-transform: uppercase;
-    font-weight: 600;
+	letter-spacing: 2.5px;
+	-webkit-text-transform: uppercase;
+	text-transform: uppercase;
+	font-weight: 600;
 }
 
 p {
-    color: #191919;
-    font-family: "Maven Pro", sans-serif;
-    font-size: 15px;
-    line-height: 1.4;
+	color: #191919;
+	font-family: "Maven Pro", sans-serif;
+	font-size: 15px;
+	line-height: 1.4;
 }
 
 img {
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 img:hover {
-    -webkit-transform: scale(1.04);
-    -moz-transform: scale(1.04);
-    -o-transform: scale(1.04);
-    -ms-transform: scale(1.04);
-    transform: scale(1.04);
+	-webkit-transform: scale(1.04);
+	-moz-transform: scale(1.04);
+	-o-transform: scale(1.04);
+	-ms-transform: scale(1.04);
+	transform: scale(1.04);
 }
 
 .round {
-    border-radius: 5px;
+	border-radius: 5px;
 }
 
 .text-light {
-    color: #191919;
+	color: #191919;
 }
 
 .button {
-    outline: 0;
-    grid-gap: 8px;
-    align-items: center;
-    border: 1px solid #000;
-    border-radius: 4px;
-    cursor: pointer;
-    display: inline-flex;
-    flex-shrink: 0;
-    font-size: 16px;
-    gap: 8px;
-    justify-content: center;
-    line-height: 1.5;
-    overflow: hidden;
-    padding: 12px 16px;
-    text-decoration: none;
-    text-overflow: ellipsis;
-    transition: all 0.14s ease-out;
-    white-space: nowrap;
+	outline: 0;
+	grid-gap: 8px;
+	align-items: center;
+	border: 1px solid #000;
+	border-radius: 4px;
+	cursor: pointer;
+	display: inline-flex;
+	flex-shrink: 0;
+	font-size: 16px;
+	gap: 8px;
+	justify-content: center;
+	line-height: 1.5;
+	overflow: hidden;
+	padding: 12px 16px;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	transition: all 0.14s ease-out;
+	white-space: nowrap;
 }
 
 .button:hover {
-    background-color: #4285f4;
-    box-shadow: 4px 4px 0 #000;
-    transform: translate(-4px, -4px);
+	background-color: #4285f4;
+	box-shadow: 4px 4px 0 #000;
+	transform: translate(-4px, -4px);
 }
 
 .button:focus-visible {
-    outline-offset: 1px;
+	outline-offset: 1px;
 }
 
 a {
-    color: #191919;
+	color: #191919;
 }
 
 a:hover {
-    color: #e64398;
+	color: #e64398;
 }
 
 .thumbnail {
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1.2rem;
-    border: solid 1px #f0ebf4;
-    border-radius: 0;
-    line-height: 0;
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 1.2rem;
+	border: solid 1px #f0ebf4;
+	border-radius: 0;
+	line-height: 0;
 }
 
 .portfolio-me {
-    padding: 20px;
-    background: #4285f4;
-    color: #fff;
-    box-shadow: 1px 1px 1px 1px #4285f4 !important;
-    overflow: auto;
-    overflow: -moz-scrollbars-none;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+	padding: 20px;
+	background: #4285f4;
+	color: #fff;
+	box-shadow: 1px 1px 1px 1px #4285f4 !important;
+	overflow: auto;
+	overflow: -moz-scrollbars-none;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
 }
-
 
 /* .portfolio-me p {
     color: #aaabc3;
 } */
 
 .portfolio-me a {
-    font-family: "Maven Pro", Helvetica, Arial, sans-serif;
-    font-weight: 600;
-    color: #d2fdff;
-    font-size: 13px;
-    letter-spacing: 2.5px;
-    -webkit-text-transform: uppercase;
-    text-transform: uppercase;
+	font-family: "Maven Pro", Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	color: #d2fdff;
+	font-size: 13px;
+	letter-spacing: 2.5px;
+	-webkit-text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .portfolio-me a:hover {
-    color: #fff;
+	color: #fff;
 }
 
 .portfolio-breadcrumb {
-    margin: 0;
-    padding: 20px;
-    border-bottom: 1px solid #4285f4;
+	margin: 0;
+	padding: 20px;
+	border-bottom: 1px solid #4285f4;
 }
 
 .portfolio-breadcrumb a {
-    font-family: "Maven Pro", sans-serif;
-    font-weight: 600;
-    font-size: 1.2rem;
-    letter-spacing: 2.5px;
-    -webkit-text-transform: uppercase;
-    text-transform: uppercase;
+	font-family: "Maven Pro", sans-serif;
+	font-weight: 600;
+	font-size: 1.2rem;
+	letter-spacing: 2.5px;
+	-webkit-text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .portfolio-intro {
-    margin: 0;
-    padding: 40px 50px 30px;
+	margin: 0;
+	padding: 40px 50px 30px;
 }
 
 .portfolio-intro p {
-    border-bottom: 1px solid #4285f4;
-    padding-bottom: 40px;
+	border-bottom: 1px solid #4285f4;
+	padding-bottom: 40px;
 }
 
 .portfolio-index {
-    margin: 0;
-    padding: 10px 50px;
+	margin: 0;
+	padding: 10px 50px;
 }
 
 .portfolio-index .thumbnail {
-    margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .portfolio-index a {
-    color: #02072f;
+	color: #02072f;
 }
 
 .portfolio-index .cell {
-    margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 
 .portfolio-index .cell h5 {
-    color: #02072f;
-    letter-spacing: 1px;
+	color: #02072f;
+	letter-spacing: 1px;
 }
 
 .portfolio-meta {
-    padding-bottom: 20px;
-    padding-left: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
 }
 
 .portfolio-meta .button {
-    margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .portfolio-project p {
-    border-bottom: 1px solid #4285f4;
+	border-bottom: 1px solid #4285f4;
 }
 
 .portfolio-project li {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: 15px;
-    color: #4285f4;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	font-size: 15px;
+	color: #4285f4;
 }
 
 .portfolio-bio {
-    line-height: 25px;
+	line-height: 25px;
 }
-
 
 /* Error styling */
 
 .error-wrapper {
-    background-image: url("../images/404.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 50vh;
+	background-image: url("../images/404.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 50vh;
 }
 
 .error-content {
-    margin: 64px 32px;
+	margin: 64px 32px;
 }
 
 .error-text-center {
-    text-align: center;
+	text-align: center;
 }
 
 h1.status {
-    padding: 16px 0;
+	padding: 16px 0;
 }
 
 .status p {
-    padding-top: 16px;
+	padding-top: 16px;
 }
