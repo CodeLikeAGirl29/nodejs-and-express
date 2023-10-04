@@ -1,48 +1,43 @@
 /**************************************
-Lindsey Howard
+Lindsey
 Team Treehouse: JavaScript Full Stack Techdegree
 Project 6: Static Node.js and Express Site
 **************************************/
 
-const express = require("express");
-const path = require("path");
+// Require Express
+const express = require('express');
+
+// Configure Express and static files
 const app = express();
-const bodyParser = require("body-parser");
-const projectRoutes = require("./routes/projects");
+app.set('view engine', 'pug');
+app.use('/static', express.static('public'));
 
-// Looks if port exists, or use port 3300
-const port = process.env.PORT || 3300;
-app.use("/static", express.static("public"));
+// Declare and configure routes
+const mainRoutes = require('./routes');
+const projectRoutes = require('./routes/projects');
 
-// using pug
-app.set("view engine", "pug");
+app.use(mainRoutes);
+app.use('/projects', projectRoutes);
 
-// defining routes
-const routes = require("./routes/index");
-
-app.use(routes);
-app.use(projectRoutes);
-
-// page npt found error
-app.use(function (req, res, next) {
-	const err = new Error("Page is Not Found");
-	err.status = 404;
-	console.error(
-		`An error occured on route ${req.originalUrl} with message: ${err.message} and status: ${err.status}`
-	);
-	next(err);
+// Catch 404 errors and pass into next .use() function
+app.use((req, res, next) => {
+    const err = new Error('Page Not Found');
+    err.status = 404;
+    next(err);
 });
 
-// more error handling
+// Catch errors: if 404 render error page with 'not found', otherwise pass 500 error to page
 app.use((err, req, res, next) => {
-	res.locals.error = err;
-	res.status(err.status || 500);
-	res.render("error", {
-		stack: err.stack
-	});
+    if (!err.status) {
+        err.status = 500;
+        err.message = 'Internal Server Error';
+    }
+    console.log(err);
+    res.render('error', {err});
 });
 
-// start the server
+// Create listener on specified port
+const port = 3001;
 app.listen(port, () => {
-	console.log(`The server is running on localhost:${port}`);
+    console.log(`App is listening on port: ${port}`);
 });
