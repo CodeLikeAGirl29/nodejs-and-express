@@ -1,21 +1,24 @@
-const express = require("express");
-const router = express.Router();
-const data = require("../data.json");
+// Require Express, declare router and require project JSON data
+const express = require('express');
 
-// Dynamic "project" routes
-router.get("/projects/:paramId", (req, res, next) => {
-	// adding data
-	const { paramId } = req.params;
-	// loop through projects
-	for (let i = 0; i < data.projects.length; i++) {
-		// if the project id matches the url parameter id
-		if (data.projects[i].id === paramId) {
-			// return the template that matches that id
-			return res.render("project", data.projects[i]);
-		}
-	}
-	return next();
+const router = express.Router();
+const {projects} = require('../data.json');
+
+// Redirect if user goes to 'server/projects/' without project id as query param
+router.get('/', (req, res) => {
+    res.redirect('/');
 });
 
-// exporting the router
+/* Create routes for projects pages,
+ * Pass ID as query param
+ * Pass project JSON data into route
+ */
+router.get('/:id', (req, res) => {
+    const {id} = req.params;
+    const project = projects[id - 1];
+
+    res.render('projects', {project});
+});
+
+// Export Router
 module.exports = router;
