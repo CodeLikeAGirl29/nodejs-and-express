@@ -2873,7 +2873,7 @@
  .button {
      display: inline-block;
      vertical-align: middle;
-     margin: 0 0 1rem 0;
+     margin: 0 0 1rem;
      font-family: inherit;
      padding: 0.85em 1em;
      -webkit-appearance: none;
@@ -3172,7 +3172,6 @@
      border-color: transparent;
 }
  .button.dropdown::after {
-     display: block;
      width: 0;
      height: 0;
      border: inset 0.4em;
@@ -3317,10 +3316,10 @@
      align-items: stretch;
 }
  .input-group > :first-child {
-     border-radius: 0 0 0 0;
+     border-radius: 0;
 }
  .input-group > :last-child > * {
-     border-radius: 0 0 0 0;
+     border-radius: 0;
 }
  .input-group-label, .input-group-field, .input-group-button, .input-group-button a, .input-group-button input, .input-group-button button, .input-group-button label {
      margin: 0;
@@ -3477,10 +3476,10 @@
      cursor: not-allowed;
 }
  .accordion-item:first-child > :first-child {
-     border-radius: 0 0 0 0;
+     border-radius: 0;
 }
  .accordion-item:last-child > :last-child {
-     border-radius: 0 0 0 0;
+     border-radius: 0;
 }
  .accordion-title {
      position: relative;
@@ -3494,7 +3493,7 @@
 }
  :last-child:not(.is-active) > .accordion-title {
      border-bottom: 1px solid #e6e6e6;
-     border-radius: 0 0 0 0;
+     border-radius: 0;
 }
  .accordion-title:hover, .accordion-title:focus {
      background-color: #e6e6e6;
@@ -3644,7 +3643,7 @@
      color: #fefefe;
 }
  .breadcrumbs {
-     margin: 0 0 1rem 0;
+     margin: 0 0 1rem;
      list-style: none;
 }
  .breadcrumbs::before, .breadcrumbs::after {
@@ -3842,7 +3841,7 @@
 }
  .callout {
      position: relative;
-     margin: 0 0 1rem 0;
+     margin: 0 0 1rem;
      padding: 1rem;
      border: 1px solid rgba(10, 10, 10, 0.25);
      border-radius: 0;
@@ -4250,15 +4249,12 @@
      border-color: transparent #1779ba transparent transparent;
 }
  .drilldown .js-drilldown-back > a::before {
-     display: block;
      width: 0;
      height: 0;
      border: inset 6px;
      content: '';
-     border-left-width: 0;
      border-right-style: solid;
      border-color: transparent #1779ba transparent transparent;
-     border-left-width: 0;
      display: inline-block;
      vertical-align: middle;
      margin-right: 0.75rem;
@@ -5252,7 +5248,6 @@
      background-color: #1779ba;
 }
  .progress-meter-text {
-     position: absolute;
      top: 50%;
      left: 50%;
      -ms-transform: translate(-50%, -50%);
@@ -5910,8 +5905,6 @@
  .top-bar {
      display: -ms-flexbox;
      display: flex;
-     -ms-flex-wrap: nowrap;
-     flex-wrap: nowrap;
      -ms-flex-pack: justify;
      justify-content: space-between;
      -ms-flex-align: center;
