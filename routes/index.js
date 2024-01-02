@@ -1,19 +1,13 @@
-// Require Express, declare router and require project JSON data
 const express = require('express');
-const {projects} = require('../data.json');
-
 const router = express.Router();
+const data = require('../data.json');
 
-// Create routes for main and about pages
-// On main page, pass projects data into route via locals variable
+// When a GET request is made to the main url
 router.get('/', (req, res) => {
-    res.locals.projects = projects;
-    res.render('index');
+	// Set locals to JSON object data 
+	res.locals.projects = data.projects;
+	res.render('index');
 });
 
-router.get('/about', (req, res) => {
-    res.render('about');
-});
-
-// Export Router
+// Export 'router' so it can be accessed by app.js
 module.exports = router;
