@@ -5,10 +5,12 @@ html(class="no-js" lang="en" dir="ltr")
     meta(http-equiv='x-ua-compatible' content='ie=edge')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     title My Portfolio Site
-    link(href='https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap' rel='stylesheet')
+
+    <link href='https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap' rel='stylesheet'>
+
     link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css')
-    link(rel='stylesheet' href='/static/css/styles.css')
-    link(rel='stylesheet' href='/static/css/foundation.css')
+    link(rel='stylesheet', href='/static/css/foundation.css')
+    link(rel='stylesheet', href='/static/css/styles.css')
   body
     #my-info.off-canvas.position-left.reveal-for-large.portfolio-me(data-off-canvas='')
       .grid-y.grid-padding-x(style='height: 100%;')
@@ -18,9 +20,7 @@ html(class="no-js" lang="en" dir="ltr")
             img.thumbnail(src='https://res.cloudinary.com/codelikeagirl29/image/upload/v1647244082/profile-img_yuhdxb.jpg' alt='lindseys profile image')
           .cell.auto
 
-
             h4 lindsey howard
-
 
             p.text-light
               | 🗲 Design. Innovate. Create.
@@ -32,7 +32,6 @@ html(class="no-js" lang="en" dir="ltr")
       .title-bar.hide-for-large
         .title-bar-left
           button.menu-icon(type='button' data-toggle='my-info')
-
 
           span.title-bar-title Lindsey
       block content
