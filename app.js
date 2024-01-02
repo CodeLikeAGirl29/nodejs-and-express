@@ -6,10 +6,11 @@ Project 6: Static Node.js and Express Site
 
 // Require Express
 const express = require('express');
+const path = require('path');
 
 // Configure Express and static files
 const app = express();
-app.use('/static', express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'pug');
 
 // Declare and configure routes
