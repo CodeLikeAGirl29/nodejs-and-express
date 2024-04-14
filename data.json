@@ -8,7 +8,7 @@
 			"live_link": "https://xhffdr.csb.app/",
 			"github_link": "https://github.com/CodeLikeAGirl29/unsplash-api",
 			"image_urls": [
-				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1665323141/projects/Photo-App_ouq2vz.png"
+				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1706884731/projects/Photo-App_rwwzcb.png"
 			]
 		},
 		{
@@ -19,7 +19,7 @@
 			"live_link": "https://city-tours-seven.vercel.app/",
 			"github_link": "https://github.com/codelikeagirl29/city-tours",
 			"image_urls": [
-				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1645750581/projects/cityTours-screenshot.png"
+				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1667060753/projects/Pastel_Pink_Minimalist_Computer_Mockup_Website_Launch_Facebook_Post_1_bwx87t.png"
 			]
 		},
 		{
@@ -57,13 +57,13 @@
 		},
 		{
 			"id": "5",
-			"project_name": "milkshakesExpress",
-			"description": "An app allowing users to sign in to view milkshake recipes.",
-			"technologies": ["Express", "Node.js", "JWT", "MongoDB"],
+			"project_name": "to-do list",
+			"description": "An app for a typical to-do list.",
+			"technologies": ["JavaScript", "HTML/CSS", "localStorage"],
 			"live_link": "https://github.com/codelikeagirl29/milkshakesExpress/",
 			"github_link": "https://github.com/codelikeagirl29/milkshakesExpress/",
 			"image_urls": [
-				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1645749312/projects/milkshakesExpress_khya9j.png"
+				"https://res.cloudinary.com/codelikeagirl29/image/upload/v1668111813/projects/Todos_1_ritatk.png"
 			]
 		},
 		{
